@@ -1,0 +1,137 @@
+*{
+	margin:0;
+	padding:0;
+	-webkit-box-sizing:border-box;
+	text-decoration:none;
+	font-size:12px;
+}
+.full{
+	width:100%;
+	height:100%;
+}
+.bg{
+	background-size:auto 70%;
+}
+.box(v){
+	display:-webkit-box;
+	-webkit-box-orient:vertical;
+}
+.pos(r){
+	position:relative;
+}
+.pos(a){
+	position:absolute;
+}
+.box(h){
+	display:-webkit-box;
+	-webkit-box-orient:horizontal;
+}
+body,html,#article{
+	.full;
+}
+#article{
+	background:#ddd;
+	.box(v);
+	#header{
+		background:#46D264;
+		.pos(r);
+		color:#fff;
+		padding:5px 0;
+		span{
+			.pos(a);
+			left:10px;
+			top:9px;
+			font-weight:bolder;
+		}
+		h1{
+			line-height:30px;
+			text-align:center;
+			font-size:20px;
+		}
+	}
+	#section{
+		-webkit-box-flex:1;
+		aside:nth-of-type(1){
+			margin:5px auto;
+			width:90%;
+			height:30px;
+			.box(h);
+			a{
+				display:block;
+				-webkit-box-flex:1;
+				line-height:30px;
+				text-align:center;
+				color:#000;
+				&.on{
+					background:#46D264;
+					color:#fff;
+					-webkit-transition:all 2s;
+				}
+			}
+		}
+		aside:nth-of-type(2){
+			width:100%;
+			background:#fff;
+			ul li{
+				border-bottom:1px solid gray;
+				line-height:40px;
+				padding:0 20px;
+				.box(h);
+				-webkit-box-pack:justify;
+				span,b{
+					display:block;
+				}
+			}
+			#onOff{
+				width:75px;
+				height:27px;
+				margin-top:5px;
+				background:url(../img/onOff.png) no-repeat -51px 0;
+				border-radius:12px;
+				-webkit-transition:background-position 1s ease-in-out;
+			}
+			span{
+				padding-left:30px;
+				&#one{
+					background:url(../img/p1.png) no-repeat left center;
+					.bg;
+				}
+				&#two{
+					background:url(../img/p2.png) no-repeat left center;
+					.bg;
+				}
+				&#three{
+					background:url(../img/p3.png) no-repeat left center;
+					.bg;
+				}
+				&#tap{
+					background:url(../img/p4.png) no-repeat left center;
+					.bg;
+				}
+			}
+		}
+		#btn{
+			width:40%;
+			height:30px;
+			background:orange;
+			border:none;
+			font-size:16px;
+			color:#fff;
+			font-weight:bolder;
+			border-radius:5px;
+			margin-top:20px;
+			margin-left:30%;
+			outline:none;
+			span{
+				width:16px;
+				height:16px;
+				display:inline-block;
+				background:url(../img/search.png);
+				background-size:100% 100%;
+				.pos(r);
+				margin-right:10px;
+				top:2px;
+			}
+		}
+	}
+}

@@ -1,0 +1,130 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  text-decoration: none;
+  font-size: 12px;
+}
+.full {
+  width: 100%;
+  height: 100%;
+}
+.bg {
+  background-size: auto 70%;
+}
+body,
+html,
+#article {
+  width: 100%;
+  height: 100%;
+}
+#article {
+  background: #ddd;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+}
+#article #header {
+  background: #46D264;
+  position: relative;
+  color: #fff;
+  padding: 5px 0;
+}
+#article #header span {
+  position: absolute;
+  left: 10px;
+  top: 9px;
+  font-weight: bolder;
+}
+#article #header h1 {
+  line-height: 30px;
+  text-align: center;
+  font-size: 20px;
+}
+#article #section {
+  -webkit-box-flex: 1;
+}
+#article #section aside:nth-of-type(1) {
+  margin: 5px auto;
+  width: 90%;
+  height: 30px;
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+}
+#article #section aside:nth-of-type(1) a {
+  display: block;
+  -webkit-box-flex: 1;
+  line-height: 30px;
+  text-align: center;
+  color: #000;
+}
+#article #section aside:nth-of-type(1) a.on {
+  background: #46D264;
+  color: #fff;
+  -webkit-transition: all 2s;
+}
+#article #section aside:nth-of-type(2) {
+  width: 100%;
+  background: #fff;
+}
+#article #section aside:nth-of-type(2) ul li {
+  border-bottom: 1px solid gray;
+  line-height: 40px;
+  padding: 0 20px;
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+  -webkit-box-pack: justify;
+}
+#article #section aside:nth-of-type(2) ul li span,
+#article #section aside:nth-of-type(2) ul li b {
+  display: block;
+}
+#article #section aside:nth-of-type(2) #onOff {
+  width: 75px;
+  height: 27px;
+  margin-top: 5px;
+  background: url(../img/onOff.png) no-repeat -51px 0;
+  border-radius: 12px;
+  -webkit-transition: background-position 1s ease-in-out;
+}
+#article #section aside:nth-of-type(2) span {
+  padding-left: 30px;
+}
+#article #section aside:nth-of-type(2) span#one {
+  background: url(../img/p1.png) no-repeat left center;
+  background-size: auto 70%;
+}
+#article #section aside:nth-of-type(2) span#two {
+  background: url(../img/p2.png) no-repeat left center;
+  background-size: auto 70%;
+}
+#article #section aside:nth-of-type(2) span#three {
+  background: url(../img/p3.png) no-repeat left center;
+  background-size: auto 70%;
+}
+#article #section aside:nth-of-type(2) span#tap {
+  background: url(../img/p4.png) no-repeat left center;
+  background-size: auto 70%;
+}
+#article #section #btn {
+  width: 40%;
+  height: 30px;
+  background: orange;
+  border: none;
+  font-size: 16px;
+  color: #fff;
+  font-weight: bolder;
+  border-radius: 5px;
+  margin-top: 20px;
+  margin-left: 30%;
+  outline: none;
+}
+#article #section #btn span {
+  width: 16px;
+  height: 16px;
+  display: inline-block;
+  background: url(../img/search.png);
+  background-size: 100% 100%;
+  position: relative;
+  margin-right: 10px;
+  top: 2px;
+}
